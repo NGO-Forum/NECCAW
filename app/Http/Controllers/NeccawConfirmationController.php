@@ -38,7 +38,7 @@ class NeccawConfirmationController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'organization' => 'required|string|max:255',
-            'interest' => 'required|in:yes',
+            'interest' => 'required|in:yes,no',
             'experience' => 'required|min:10',
             'commitments' => 'required|array|min:1',
             'photo' => 'required|image|mimes:jpg,jpeg,png|max:5120',
@@ -64,7 +64,7 @@ class NeccawConfirmationController extends Controller
             'organization' => trim($data['organization']),
             'interest' => 'yes',
             'experience' => $data['experience'],
-            'commitments' => json_encode($data['commitments']),
+            'commitments' => $data['commitments'],
             'photo' => $data['photo'],
             'bio' => $data['bio'],
             'comments' => $data['comments'] ?? null

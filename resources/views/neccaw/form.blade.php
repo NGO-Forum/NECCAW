@@ -161,7 +161,7 @@
 
                     <label class="block font-semibold text-green-700">Short Bio *</label>
 
-                    <textarea id="bio" name="bio" rows="6"  oninput="countChar()"
+                    <textarea id="bio" name="bio" rows="6"
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-600 focus:outline-none"></textarea>
 
                     <p id="err5" class="text-red-600 hidden">Bio required</p>
