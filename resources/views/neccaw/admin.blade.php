@@ -100,7 +100,7 @@
     <!-- ================= MODAL ================= -->
     <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
 
-        <div class="bg-white w-full max-w-xl rounded-xl p-6 relative">
+        <div class="bg-white w-full max-w-xl rounded-xl p-6 relative h-[90vh] overflow-auto">
 
             <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-black">
                 ✕
