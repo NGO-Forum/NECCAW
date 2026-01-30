@@ -42,7 +42,7 @@ class NeccawConfirmationController extends Controller
             'experience' => 'required|min:10',
             'commitments' => 'required|array|min:1',
             'photo' => 'required|image|mimes:jpg,jpeg,png|max:5120',
-            'bio' => 'required|min:20|max:3000',
+            'bio' => 'required|min:20|max:60000',
             'comments' => 'nullable|string'
         ]);
 

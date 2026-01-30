@@ -17,11 +17,11 @@ return new class extends Migration
             $table->string('email');
             $table->string('organization');
             $table->string('interest');
-            $table->text('experience')->nullable();
+            $table->longText('experience')->nullable();
             $table->json('commitments')->nullable();
             $table->string('photo')->nullable();
-            $table->text('bio')->nullable();
-            $table->text('comments')->nullable();
+            $table->longText('bio')->nullable();
+            $table->longText('comments')->nullable();
             $table->timestamps();
         });
     }

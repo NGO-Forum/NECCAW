@@ -161,10 +161,10 @@
 
                     <label class="block font-semibold text-green-700">Short Bio *</label>
 
-                    <textarea id="bio" name="bio" rows="6" maxlength="3000" oninput="countChar()"
+                    <textarea id="bio" name="bio" rows="6" maxlength="60000" oninput="countChar()"
                         class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-600 focus:outline-none"></textarea>
 
-                    <p id="counter" class="text-right text-sm text-gray-500">0 / 3000</p>
+                    <p id="counter" class="text-right text-sm text-gray-500">0 / 60000</p>
 
                     <p id="err5" class="text-red-600 hidden">Bio required</p>
 
@@ -374,7 +374,7 @@ function preview(input) {
 =========================== */
 function countChar() {
   counter.textContent =
-    `${document.getElementById("bio").value.length} / 3000`;
+    `${document.getElementById("bio").value.length} / 60000`;
 }
 
 /* ===========================
